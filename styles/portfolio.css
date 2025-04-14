@@ -1,0 +1,28 @@
+.portfolio-page {
+  background-color: #f2f2f2;
+}
+
+.portfolio-page h2 {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.card-title {
+  color: #023e8a;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 160px;
+  }
+}

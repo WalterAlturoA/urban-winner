@@ -1,0 +1,46 @@
+.contact-page {
+  background-color: #f7f7f7;
+}
+
+.contact-page h2 {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #0077b6;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #005f80;
+}
+
+.ratio {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .contact-page .row {
+    flex-direction: column-reverse;
+  }
+}

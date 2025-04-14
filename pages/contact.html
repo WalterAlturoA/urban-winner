@@ -1,45 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-    <header>
-        <h1>Contacto</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | MemoGraph</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <h1 class="mb-2 mb-md-0">MemoGraph</h1>
         <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="portfolio.html">Portafolio</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+          <ul class="nav flex-column flex-md-row gap-2 gap-md-4">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link text-white">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-white">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link text-white">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link text-white"
+                >Portafolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link text-white">Contacto</a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Contáctanos</h2>
+    <!-- Contacto -->
+    <main class="contact-page py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="mb-3">Contáctanos</h2>
+          <p class="lead">
+            Si tienes alguna duda o proyecto en mente, ¡estamos para ayudarte!
+          </p>
+        </div>
+
+        <div class="row">
+          <!-- Formulario de contacto -->
+          <div class="col-md-6">
             <form action="#" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                <button type="submit">Enviar</button>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  required
+                  placeholder="Tu nombre"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label"
+                  >Correo Electrónico:</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Tu correo electrónico"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  name="mensaje"
+                  required
+                  placeholder="Escribe tu mensaje"
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
-        </section>
+          </div>
+
+          <!-- Información de contacto adicional -->
+          <div class="col-md-6">
+            <h4 class="text-center mb-4">¿Prefieres llamarnos?</h4>
+            <p class="text-center">
+              <strong>Teléfono:</strong> <a href="tel:+573506483903">+57 350 648 3903</a>
+            </p>
+            <p class="text-center">
+              O envíanos un mensaje a través de <a href="https://wa.me/+573506483903" target="_blank">WhatsApp</a>
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-        <p>2025 MemoGraph - Todos los derechos reservados</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p class="mb-0">
+          2025 &copy; MemoGraph - Todos los derechos reservados
+        </p>
+      </div>
     </footer>
-</body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

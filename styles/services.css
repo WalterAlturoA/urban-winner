@@ -1,0 +1,30 @@
+.services-page {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.services-page h2 {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.card-title {
+  color: #00b4d8;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .service-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
