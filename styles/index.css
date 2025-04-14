@@ -1,0 +1,139 @@
+/* Reset y tipografía base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8em;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background-color: #caf0f8;
+  padding: 40px 0;
+}
+
+.hero__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero__text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero__image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.cta-button {
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0096c7;
+}
+
+/* Servicios */
+.services {
+  padding: 50px 0;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* Testimonios */
+.testimonials {
+  background-color: #e0f7fa;
+  padding: 40px 0;
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  margin-top: 20px;
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+}

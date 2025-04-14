@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>MemoGraph</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | MemoGraph</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <h1 class="logo">MemoGraph</h1>
       <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="./pages/about.html">Nosotros</a></li>
-          <li><a href="./pages/services.html">Servicios</a></li>
-          <li><a href="./pages/portfolio.html">Portafolio</a></li>
-          <li><a href="./pages/contact.html">Contacto</a></li>
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="./pages/about.html" class="nav__link">Nosotros</a></li>
+          <li><a href="./pages/services.html" class="nav__link">Servicios</a></li>
+          <li><a href="./pages/portfolio.html" class="nav__link">Portafolio</a></li>
+          <li><a href="./pages/contact.html" class="nav__link">Contacto</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section>
-        <h2>Bienvenido a nuestro sitio</h2>
-        <p>
-          Este es un sitio dedicado a la creación de páginas web de manera
-          sencilla y rápida.
-        </p>
-        <img src="entrega.png" alt="Ejemplo de sitio web" />
-      </section>
-      <section>
-        <button>Start here</button>
-      </section>
-    </main>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <h2>Bienvenido a MemoGraph</h2>
+          <p>Transformamos tus ideas en sitios web funcionales y visualmente atractivos. Diseño web ágil, moderno y profesional.</p>
+          <button class="cta-button">Empieza aquí</button>
+        </div>
+        <div class="hero__image">
+          <img src="/static/entrega.png" alt="Ejemplo de sitio web profesional">
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      <p>2025 MemoGraph - Todos los derechos reservados</p>
-    </footer>
-  </body>
+    <!-- Servicios destacados -->
+    <section class="services container">
+      <h2>¿Qué hacemos?</h2>
+      <div class="services__grid">
+        <article class="service-card">
+          <h3>Diseño Web</h3>
+          <p>Interfaces modernas y responsivas.</p>
+        </article>
+        <article class="service-card">
+          <h3>Desarrollo Frontend</h3>
+          <p>Usamos HTML, CSS, JS y frameworks como React y Bootstrap.</p>
+        </article>
+        <article class="service-card">
+          <h3>Optimización</h3>
+          <p>Velocidad, accesibilidad y buenas prácticas para tu web.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials container">
+      <h2>Testimonios</h2>
+      <blockquote>
+        “MemoGraph convirtió mi idea en una página profesional que me trajo más clientes.” <br><cite>- Cliente feliz</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>2025 &copy; MemoGraph - Todos los derechos reservados</p>
+    </div>
+  </footer>
+</body>
 </html>
