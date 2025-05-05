@@ -1,0 +1,344 @@
+// =============================
+// 🎨 VARIABLES
+// =============================
+$color-primary: #0077b6;
+$color-primary-dark: #005f80;
+$color-secondary: #e0f7fa;
+$color-accent: #00b4d8;
+$color-accent-dark: #0096c7;
+$color-heading: #023e8a;
+$color-background: #f9f9f9;
+$color-text: #333;
+
+// =============================
+// 🧱 BASE
+// =============================
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background-color: $color-background;
+  color: $color-text;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, span {
+  font-weight: 700;
+}
+
+// =============================
+// 🔘 BUTTONS
+// =============================
+.button-main {
+  background-color: $color-accent;
+  border: none;
+  border-color: $color-accent;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-accent-dark;
+    border-color: $color-accent-dark;
+  }
+}
+
+// =============================
+// 📌 HEADER
+// =============================
+header {
+  background-color: $color-primary;
+  color: white;
+  padding: 1rem 0;
+
+  span {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li a,
+    .nav-link {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+// =============================
+// 🧾 FOOTER
+// =============================
+footer {
+  background-color: $color-primary;
+  color: white;
+  padding: 1rem 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+// =============================
+// 🏠 MAIN & HERO
+// =============================
+main {
+  background-color: $color-background;
+  color: $color-text;
+}
+
+.hero {
+  background-color: $color-secondary;
+  background-image: linear-gradient(to right, rgba(0, 123, 255, 0.05), #ffffff);
+  padding: 3rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  p {
+    max-width: 500px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a.btn {
+    @extend .button-main;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+
+    img {
+      max-height: 250px;
+      margin: 1rem auto 0;
+    }
+  }
+}
+
+// =============================
+// 💬 TESTIMONIOS
+// =============================
+.testimonios {
+  background-color: $color-secondary;
+  padding: 3rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  p {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+  }
+
+  a.btn {
+    @extend .button-main;
+  }
+}
+
+// =============================
+// 📄 ABOUT PAGE
+// =============================
+.about-page {
+  background-color: $color-background;
+  color: $color-text;
+
+  h2 {
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  p.lead {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 768px) {
+    .row.align-items-center {
+      text-align: center;
+    }
+
+    img {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+// =============================
+// 🛠️ SERVICES PAGE
+// =============================
+.services-page {
+  background-color: #f8f9fa;
+  color: $color-text;
+
+  h2 {
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  .service-icon {
+    width: 64px;
+    height: 64px;
+
+    @media (max-width: 768px) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+// =============================
+// ✉️ CONTACT PAGE
+// =============================
+.contact-page {
+  background-color: #f7f7f7;
+
+  h2 {
+    color: $color-primary;
+    font-weight: bold;
+  }
+
+  .form-control {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-label {
+    font-weight: 500;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    @extend .button-main;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+// =============================
+// 🖼️ PORTFOLIO PAGE
+// =============================
+.portfolio-page {
+  background-color: #f2f2f2;
+
+  h2 {
+    color: $color-primary;
+    font-weight: bold;
+  }
+
+  .card-title {
+    color: $color-heading;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 200px;
+
+    @media (max-width: 768px) {
+      height: 160px;
+    }
+  }
+}
+
+// =============================
+// 🧩 COMPONENTS
+// =============================
+.card-title {
+  color: $color-accent;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+// =============================
+// 🎞️ ANIMATIONS
+// =============================
+.animated {
+  opacity: 0;
+  transform: translateY(30px);
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.slide-up {
+  animation-name: slideUp;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
