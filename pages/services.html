@@ -3,7 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Servicios | MemoGraph</title>
+    <title>Servicios de Diseño y Desarrollo Web | MemoGraph</title>
+    <meta
+      name="description"
+      content="Conoce los servicios de MemoGraph: diseño web, desarrollo a medida e inteligencia artificial para impulsar tu negocio digital. Soluciones personalizadas que marcan la diferencia."
+    />
+    <meta
+      name="keywords"
+      content="diseño web, desarrollo web, automatización, inteligencia artificial, soluciones digitales, servicios tecnológicos"
+    />
+    <meta name="author" content="MemoGraph" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../static/favicon.ico" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Servicios de Diseño y Desarrollo Web | MemoGraph"
+    />
+    <meta
+      property="og:description"
+      content="Impulsa tu presencia online con nuestros servicios personalizados: diseño, desarrollo web e inteligencia artificial."
+    />
+    <meta property="og:image" content="https://walteralturoa.github.io/urban-winner/static/entrega.png" />
+    <meta property="og:url" content="https://walteralturoa.github.io/urban-winner/pages/services.html" />
+    <meta property="og:site_name" content="MemoGraph" />
 
     <!-- Bootstrap -->
     <link
@@ -33,9 +59,7 @@
               <a href="services.html" class="nav-link">Servicios</a>
             </li>
             <li class="nav-item">
-              <a href="portfolio.html" class="nav-link"
-                >Portafolio</a
-              >
+              <a href="portfolio.html" class="nav-link">Portafolio</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contacto</a>
@@ -46,71 +70,62 @@
     </header>
 
     <!-- Servicios -->
-    <main class="services-page py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="mb-3">Nuestros Servicios</h2>
-          <p class="lead">
+    <main class="services-page">
+      <section class="services-container">
+        <div class="services-header">
+          <h2>Nuestros Servicios</h2>
+          <p class="services-description">
             Soluciones digitales a la medida para llevar tu negocio al siguiente
             nivel.
           </p>
         </div>
 
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <img
-                  src="../static/web-design.svg"
-                  alt="Diseño web"
-                  class="service-icon mb-3"
-                />
-                <h3 class="card-title">Diseño Web</h3>
-                <p class="card-text">
-                  Diseños modernos, responsivos y optimizados para ofrecer una
-                  experiencia visual única.
-                </p>
-              </div>
-            </div>
-          </div>
+        <section class="services-grid">
+          <article class="service-card">
+            <img
+              src="../static/web-design.svg"
+              alt="Icono representando el diseño web"
+              class="service-icon"
+            />
+            <h3 class="service-title">Diseño Web</h3>
+            <p class="service-text">
+              Diseños modernos, responsivos y optimizados para ofrecer una
+              experiencia visual única.
+            </p>
+          </article>
 
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <img
-                  src="../static/dev.png"
-                  alt="Desarrollo"
-                  class="service-icon mb-3"
-                />
-                <h3 class="card-title">Desarrollo Web</h3>
-                <p class="card-text">
-                  Desarrollamos aplicaciones seguras, escalables y eficientes
-                  con tecnologías de vanguardia.
-                </p>
-              </div>
-            </div>
-          </div>
+          <article class="service-card">
+            <img
+              src="../static/dev.png"
+              alt="Icono representando el desarrollo web"
+              class="service-icon"
+            />
+            <h3 class="service-title">Desarrollo Web</h3>
+            <p class="service-text">
+              Desarrollamos aplicaciones seguras, escalables y eficientes con
+              tecnologías de vanguardia.
+            </p>
+          </article>
 
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <img src="../static/ai.svg" alt="IA" class="service-icon mb-3" />
-                <h3 class="card-title">IA & Automatización</h3>
-                <p class="card-text">
-                  Soluciones inteligentes que optimizan procesos y mejoran la
-                  toma de decisiones.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+          <article class="service-card">
+            <img
+              src="../static/ai.svg"
+              alt="Icono representando inteligencia artificial"
+              class="service-icon"
+            />
+            <h3 class="service-title">IA & Automatización</h3>
+            <p class="service-text">
+              Soluciones inteligentes que optimizan procesos y mejoran la toma
+              de decisiones.
+            </p>
+          </article>
+        </section>
 
-        <!-- sección de contacto o CTA -->
-        <div class="text-center mt-5">
-          <p class="lead mb-3">¿Listo para comenzar tu proyecto?</p>
-          <a href="contact.html" class="btn btn-primary btn-lg">Contáctanos</a>
-        </div>
-      </div>
+        <section class="services-cta">
+          <p class="cta-text">¿Listo para comenzar tu proyecto?</p>
+          <a href="contact.html" class="cta-button">Contáctanos</a>
+        </section>
+      </section>
     </main>
 
     <!-- Footer -->

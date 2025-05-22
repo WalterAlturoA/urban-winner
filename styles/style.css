@@ -10,7 +10,10 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, span {
+h1,
+h2,
+h3,
+span {
   font-weight: 700;
 }
 
@@ -61,6 +64,12 @@ footer {
 }
 footer p {
   margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 main {
@@ -146,20 +155,78 @@ main {
 .services-page {
   background-color: #f8f9fa;
   color: #333;
+  padding-bottom: 3rem;
 }
-.services-page h2 {
+.services-page .services-header {
+  text-align: center;
+  margin: 2.5rem;
+}
+.services-page .services-header h2 {
   font-weight: bold;
-  color: #0077b6;
+  color: #333;
+  margin-bottom: 1rem;
 }
-.services-page .service-icon {
+.services-page .services-header .services-description {
+  max-width: 60ch;
+  margin: 0 auto;
+  font-size: 1.125rem;
+}
+.services-page .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.services-page .service-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-page .service-card .service-icon {
   width: 64px;
   height: 64px;
+  margin-bottom: 1rem;
 }
 @media (max-width: 768px) {
-  .services-page .service-icon {
+  .services-page .service-card .service-icon {
     width: 48px;
     height: 48px;
   }
+}
+.services-page .service-card .service-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #0077b6;
+}
+.services-page .service-card .service-text {
+  font-size: 1rem;
+}
+.services-page .services-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+.services-page .services-cta .cta-text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.services-page .services-cta .cta-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.services-page .services-cta .cta-button:hover {
+  background-color: #0077b6;
 }
 
 .contact-page {
@@ -193,14 +260,56 @@ main {
 }
 
 .portfolio-page {
+  padding: 3rem 0;
   background-color: #f2f2f2;
 }
-.portfolio-page h2 {
+.portfolio-page .intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.portfolio-page .intro h2 {
+  margin-bottom: 0.5rem;
   color: #0077b6;
   font-weight: bold;
 }
-.portfolio-page .card-title {
+.portfolio-page .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.portfolio-page .projects .project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+.portfolio-page .projects .project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.portfolio-page .projects .card-body {
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .portfolio-page .projects {
+    grid-template-columns: 1fr;
+  }
+}
+.portfolio-page .video-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+.portfolio-page .video-section .video-container {
+  aspect-ratio: 16/9;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.portfolio-page h5 {
   color: #023e8a;
+  font-weight: bold;
 }
 .portfolio-page .card-img-top {
   object-fit: cover;
